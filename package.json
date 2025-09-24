@@ -1,0 +1,36 @@
+{
+  "name": "math-group-website",
+  "version": "1.0.0",
+  "description": "موقع مجموعة الرياضيات - منصة تعليمية تفاعلية تدعم رؤية عُمان 2040",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "serve": "python -m http.server",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Ready for deployment to hosting platform'"
+  },
+  "keywords": [
+    "mathematics",
+    "education",
+    "oman",
+    "arabic",
+    "bilingual",
+    "student-platform"
+  ],
+  "author": "المهندس مؤيد العلوي",
+  "license": "MIT",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/math-group-website.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

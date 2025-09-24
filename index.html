@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="site_title">مجموعة الرياضيات | فك شفرة المستقبل</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- MathJax for mathematical formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        // MathJax configuration
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+        
+        // تطبيق اللغة المحفوظة فوراً قبل عرض الصفحة
+        const savedLang = localStorage.getItem('math_lang') || 'ar';
+        document.documentElement.lang = savedLang;
+        document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="brand">
+                <h1 data-translate="brand_title">مجموعة الرياضيات</h1>
+                <p class="subtitle" data-translate="brand_subtitle">حيث تلتقي الأرقام بالطموح</p>
+            </div>
+            <div class="header-controls">
+                <button id="langToggle" class="control-btn" aria-label="Switch Language">EN</button>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="math-background">
+                <div class="math-symbols-floating">
+                    <div class="math-symbol">∑</div>
+                    <div class="math-symbol">∫</div>
+                    <div class="math-symbol">π</div>
+                    <div class="math-symbol">∞</div>
+                    <div class="math-symbol">√</div>
+                    <div class="math-symbol">φ</div>
+                    <div class="math-symbol">θ</div>
+                    <div class="math-symbol">α</div>
+                    <div class="math-symbol">β</div>
+                    <div class="math-symbol">γ</div>
+                </div>
+                <div class="geometric-shape circle"></div>
+                <div class="geometric-shape triangle"></div>
+                <div class="geometric-shape hexagon"></div>
+                <div class="floating-formula formula-1">$$e^{i\pi} + 1 = 0$$</div>
+                <div class="floating-formula formula-2">$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</div>
+                <div class="floating-formula formula-3">$$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$</div>
+            </div>
+            <div class="hero-inner">
+                <h2 data-translate="hero_title">فك شفرة المستقبل، معادلة بمعادلة</h2>
+                <p data-translate="hero_subtitle">نحن مجتمع فكري يستكشف عوالم الرياضيات الأنيقة، ونبني جسورًا بين النظريات المجردة والتطبيقات التي تشكل الغد.</p>
+                <div class="hero-formula">
+                    $$f(x) = \lim_{n \to \infty} \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x-a)^k$$
+                </div>
+                <a href="#about" class="btn primary" data-translate="hero_button">استكشف أبعادنا</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section squ-background-section">
+        <div class="section-overlay">
+            <div class="math-decorations">
+                <div class="math-symbol">∑</div>
+                <div class="math-symbol">∫</div>
+                <div class="math-symbol">π</div>
+                <div class="math-symbol">∞</div>
+            </div>
+            <h2 data-translate="about_title">منطق وجودنا</h2>
+            <p data-translate="about_p">تأسست مجموعة الرياضيات على مبدأ أن الأرقام هي لغة الكون. نحن لا نرى الرياضيات كمادة دراسية، بل كمنهجية تفكير قادرة على حل المشكلات المعقدة، وإلهام الابتكار، وكشف الأنماط الخفية في عالمنا. نسعى لتمكين كل عقل شغوف بالأرقام ليصبح متغيرًا مؤثرًا في معادلة التقدم.</p>
+            
+            <div class="math-concepts-grid">
+                <div class="math-concept-card">
+                    <div class="concept-icon">∇</div>
+                    <h3 data-translate="concept_analysis">التحليل الرياضي</h3>
+                    <div class="concept-formula">$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$</div>
+                </div>
+                <div class="math-concept-card">
+                    <div class="concept-icon">∑</div>
+                    <h3 data-translate="concept_algebra">الجبر الخطي</h3>
+                    <div class="concept-formula">$$\det(A) = \sum_{\sigma} \text{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma(i)}$$</div>
+                </div>
+                <div class="math-concept-card">
+                    <div class="concept-icon">∫</div>
+                    <h3 data-translate="concept_calculus">حساب التفاضل والتكامل</h3>
+                    <div class="concept-formula">$$\int_a^b f'(x)dx = f(b) - f(a)$$</div>
+                </div>
+                <div class="math-concept-card">
+                    <div class="concept-icon">π</div>
+                    <h3 data-translate="concept_geometry">الهندسة التحليلية</h3>
+                    <div class="concept-formula">$$x^2 + y^2 = r^2$$</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="squ-department" class="section">
+        <div class="section-overlay">
+            <div class="geometric-background">
+                <svg class="geometric-pattern" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="var(--math-secondary)" stroke-width="0.5" opacity="0.1"/>
+                        </pattern>
+                        <pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse">
+                            <circle cx="2.5" cy="2.5" r="0.5" fill="var(--math-accent)" opacity="0.1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)"/>
+                    <rect width="100%" height="100%" fill="url(#dots)"/>
+                </svg>
+            </div>
+            
+            <div class="squ-department-content">
+                <div class="squ-icon-container">
+                    <div class="squ-icon">
+                        <svg viewBox="0 0 24 24" width="80" height="80" fill="var(--accent-color)">
+                            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                        </svg>
+                        <div class="icon-glow"></div>
+                    </div>
+                </div>
+                
+                <h2 data-translate="squ_department_title">قسم الرياضيات - جامعة السلطان قابوس</h2>
+                <p data-translate="squ_department_subtitle">استكشف البرامج الأكاديمية والفرص التعليمية المتميزة في قسم الرياضيات بجامعة السلطان قابوس</p>
+                
+                <div class="squ-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">$$\infty$$</div>
+                        <div class="stat-label" data-translate="stat_possibilities">إمكانيات لا نهائية</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$$\pi$$</div>
+                        <div class="stat-label" data-translate="stat_precision">دقة رياضية</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$$e$$</div>
+                        <div class="stat-label" data-translate="stat_excellence">تميز طبيعي</div>
+                    </div>
+                </div>
+                
+                <a href="https://www.squ.edu.om/science/Departments/Mathematics" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="btn primary squ-btn" 
+                   data-translate="visit_squ_department">
+                    <span class="btn-icon">🎓</span>
+                    <span data-translate="visit_squ_department">زيارة الموقع</span>
+</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section alt">
+        <h2 data-translate="timeline_title">متجهاتنا الزمنية</h2>
+        <div class="tabs">
+            <button class="tab active" data-tab="fall" data-translate="timeline_tab_fall">متتالية الخريف</button>
+            <button class="tab" data-tab="spring" data-translate="timeline_tab_spring">متتالية الربيع</button>
+        </div>
+        <div class="tab-panels">
+            <div class="tab-panel active" id="fall">
+                <div class="events-grid">
+                    <div class="event-card has-image" data-event="الخوارزمي الصغير">
+                        <div class="event-image">
+                            <img src="images/الخوارزمي1757676545.jpg" alt="الخوارزمي الصغير" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_f1_title">الخوارزمي الصغير</h3>
+                            <p class="event-description" data-translate="timeline_f1_desc">مسابقة رياضية مثيرة تكشف عن مواهب الطلاب الصغار وتحفزهم على حب الأرقام والمعادلات</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card has-image" data-event="الأمسية الافتتاحية">
+                        <div class="event-image">
+                            <img src="images/الامسية الافتتاحية1757676545.jpg" alt="الأمسية الافتتاحية" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_f2_title">الأمسية الافتتاحية</h3>
+                            <p class="event-description" data-translate="timeline_f2_desc">بداية رحلة أكاديمية ملهمة تجمع عشاق الرياضيات في لحظات من الإبداع والطموح</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card has-image" data-event="معرض التخصصات">
+                        <div class="event-image">
+                            <img src="images/معرض التخصصات.jpg" alt="معرض التخصصات" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_f4_title">معرض التخصصات</h3>
+                            <p class="event-description" data-translate="timeline_f4_desc">نافذة على مستقبل مشرق، حيث تلتقي التخصصات الرياضية بالحلول المبتكرة لعالم الغد</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card has-image" data-event="فعالية اليوم الوطني">
+                        <div class="event-image">
+                            <img src="images/العيد الوطني1757676545.jpg" alt="فعالية اليوم الوطني" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_f5_title">فعالية اليوم الوطني</h3>
+                            <p class="event-description" data-translate="timeline_f5_desc">احتفالية وطنية تجسد روح الانتماء وتربط الرياضيات بالهوية العمانية الأصيلة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card has-image" data-event="Workshop">
+                        <div class="event-image">
+                            <img src="images/Workshop.jpg" alt="Workshop" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_f6_title">Workshop</h3>
+                            <p class="event-description" data-translate="timeline_f6_desc">مختبرات فكرية تفاعلية تحول المفاهيم المعقدة إلى تجارب عملية ممتعة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card has-image" data-event="احتفالية الخريجين">
+                        <div class="event-image">
+                            <img src="images/الخريجيين1757676545.jpg" alt="احتفالية الخريجين" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_f7_title">الاحتفال بخريجي القسم</h3>
+                            <p class="event-description" data-translate="timeline_f7_desc">تتويج رحلة أكاديمية استثنائية وبداية مسيرة مهنية واعدة في عالم الأرقام</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel" id="spring">
+                <div class="events-grid">
+                    <div class="event-card has-image" data-event="دورة تعليمية للأطفال">
+                        <div class="event-image">
+                            <img src="images/فعاليات الاطفال1757676545.jpg" alt="دورة تعليمية للأطفال" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_s1_title">دورات الأطفال</h3>
+                            <p class="event-description" data-translate="timeline_s1_desc">رحلة استكشافية ممتعة تأخذ الأطفال إلى عالم الأرقام المدهش بطريقة تفاعلية ومبدعة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card has-image" data-event="Workshop">
+                        <div class="event-image">
+                            <img src="images/Workshop.jpg" alt="Workshop" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_s3_title">Workshop</h3>
+                            <p class="event-description" data-translate="timeline_s3_desc">جلسات تدريبية متخصصة تجمع بين النظرية والتطبيق لصقل المهارات الرياضية</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card highlight-event has-image">
+                        <div class="event-image">
+                            <img src="images/الملتقى.jpg" alt="ملتقى الرياضيات" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <div class="event-info">
+                            <h3 class="event-title" data-translate="timeline_s5_title">ملتقى الرياضيات</h3>
+                            <p class="event-description" data-translate="timeline_s5_desc">الحدث الأبرز - ملتقى سنوي يجمع نخبة من الأكاديميين والباحثين لتبادل المعرفة والخبرات</p>
+                            <div class="highlight-badge">الحدث الأبرز</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tools" class="section">
+        <h2 data-translate="tools_title">أدوات الرياضيات المساعدة</h2>
+        <div class="tools-grid">
+            <div class="tool-box" id="calcBox">
+              <h3 data-translate="tools_b1_t">آلة حاسبة بسيطة</h3>
+              <input type="text" id="calcExpr" placeholder="مثال: 5*3 + 2" data-translate="tools_calc_placeholder" />
+              <button id="calcRun" data-translate="tools_run">احسب</button>
+              <div class="result" id="calcResult"></div>
+              <div class="small-note" data-translate="tools_b1_n">يدعم + - * / والأسس ^.</div>
+            </div>
+            <div class="tool-box" id="angleBox">
+              <h3 data-translate="tools_b2_t">تحويل درجات/راديان</h3>
+              <input type="number" id="degVal" placeholder="درجة" data-translate="tools_deg_placeholder" />
+              <button id="degToRad" data-translate="tools_torad">إلى راديان</button>
+              <input type="number" id="radVal" placeholder="راديان" data-translate="tools_rad_placeholder" />
+              <button id="radToDeg" data-translate="tools_todeg">إلى درجة</button>
+              <div class="result" id="angleResult"></div>
+            </div>
+            <div class="tool-box" id="factorBox">
+              <h3 data-translate="tools_b3_t">تحليل عدد لعوامله</h3>
+              <input type="number" id="factInput" placeholder="أدخل عدد ≥ 2" data-translate="tools_factor_placeholder" />
+              <button id="factRun" data-translate="tools_run">حلل</button>
+              <div class="result" id="factResult"></div>
+            </div>
+            <div class="tool-box" id="primeBox">
+              <h3 data-translate="tools_b4_t">اختبار أولية</h3>
+              <input type="number" id="primeInput" placeholder="عدد" data-translate="tools_prime_placeholder" />
+              <button id="primeRun" data-translate="tools_run">تحقق</button>
+              <div class="result" id="primeResult"></div>
+            </div>
+            <div class="tool-box" id="seqBox">
+              <h3 data-translate="tools_b5_t">مجموع متسلسلة أعداد صحيحة</h3>
+              <input type="number" id="seqN" placeholder="n" data-translate="tools_seq_placeholder" />
+              <button id="seqRun" data-translate="tools_seq_calc">احسب S = n(n+1)/2</button>
+              <div class="result" id="seqResult"></div>
+            </div>
+            <div class="tool-box" id="gcdBox">
+              <h3 data-translate="tools_b6_t">أكبر قاسم مشترك (GCD)</h3>
+              <input type="number" id="gcdA" placeholder="a" data-translate="tools_gcd_a_placeholder" />
+              <input type="number" id="gcdB" placeholder="b" data-translate="tools_gcd_b_placeholder" />
+              <button id="gcdRun" data-translate="tools_run">احسب</button>
+              <div class="result" id="gcdResult"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="governance" class="section alt">
+        <h2 data-translate="gov_title">الهيكل التنظيمي</h2>
+        <div class="grid three">
+            <div class="card mini"><h3 data-translate="gov_r1_t">الرئيس</h3><p data-translate="gov_r1_d">الإشراف العام وقيادة الرؤية الاستراتيجية للمجموعة.</p></div>
+            <div class="card mini"><h3 data-translate="gov_r2_t">النواب</h3><p data-translate="gov_r2_d">دعم الرئيس وتنسيق العمل بين اللجان المختلفة.</p></div>
+            <div class="card mini"><h3 data-translate="gov_r3_t">اللجنة الثقافية</h3><p data-translate="gov_r3_d">إعداد وتنظيم المحتوى الثقافي والبرامج الأكاديمية.</p></div>
+            <div class="card mini"><h3 data-translate="gov_r4_t">لجنة المشاريع</h3><p data-translate="gov_r4_d">تطوير وإدارة المشاريع والمبادرات الخاصة بالمجموعة.</p></div>
+            <div class="card mini"><h3 data-translate="gov_r5_t">لجنة العلاقات</h3><p data-translate="gov_r5_d">بناء وتوطيد الشراكات مع الجهات الخارجية.</p></div>
+            <div class="card mini"><h3 data-translate="gov_r6_t">اللجنة الإعلامية</h3><p data-translate="gov_r6_d">إدارة الهوية الرقمية وإنتاج المحتوى الإعلامي.</p></div>
+            <div class="card mini"><h3 data-translate="gov_r7_t">اللجنة التنظيمية</h3><p data-translate="gov_r7_d">التخطيط اللوجستي وتنظيم الفعاليات والملتقيات.</p></div>
+        </div>
+    </section>
+
+    <section id="ai-tools" class="section">
+        <h2 data-translate="ai_title">أدوات الذكاء الاصطناعي للرياضيات</h2>
+        <div class="grid three">
+            <div class="card">
+                <h3>Symbolab</h3>
+                <p data-translate="ai_t1_d">محرك بحث رياضي يقدم حلولاً خطوة بخطوة لمسائل الجبر، التفاضل والتكامل، والمزيد. يستخدم الذكاء الاصطناعي لفهم وتفسير المعادلات.</p>
+                <a href="https://www.symbolab.com/" target="_blank" rel="noopener" class="btn primary" data-translate="ai_visit">زيارة الأداة</a>
+            </div>
+            <div class="card">
+                <h3>Wolfram|Alpha</h3>
+                <p data-translate="ai_t2_d">محرك معرفي حسابي يجيب على الأسئلة الواقعية باستخدام خوارزميات ونماذج ذكاء اصطناعي متقدمة. مثالي للحسابات المعقدة وتحليل البيانات.</p>
+                <a href="https://www.wolframalpha.com/" target="_blank" rel="noopener" class="btn primary" data-translate="ai_visit">زيارة الأداة</a>
+            </div>
+            <div class="card">
+                <h3>Mathway</h3>
+                <p data-translate="ai_t3_d">أداة لحل المسائل الرياضية الفورية. يمكنك كتابة المسألة أو التقاط صورة لها للحصول على إجابات فورية وحلول مفصلة.</p>
+                <a href="https://www.mathway.com/" target="_blank" rel="noopener" class="btn primary" data-translate="ai_visit">زيارة الأداة</a>
+            </div>
+            <div class="card">
+                <h3>GeoGebra</h3>
+                <p data-translate="ai_t4_d">تطبيق رياضي تفاعلي يجمع بين الهندسة والجبر وجداول البيانات والرسوم البيانية والإحصاءات والتفاضل والتكامل في حزمة واحدة سهلة الاستخدام.</p>
+                <a href="https://www.geogebra.org/" target="_blank" rel="noopener" class="btn primary" data-translate="ai_visit">زيارة الأداة</a>
+            </div>
+            <div class="card">
+                <h3>Desmos</h3>
+                <p data-translate="ai_t5_d">آلة حاسبة بيانية متقدمة تستخدم الذكاء الاصطناعي لتصور الدوال والمعادلات بشكل تفاعلي وسهل الفهم.</p>
+                <a href="https://www.desmos.com/calculator" target="_blank" rel="noopener" class="btn primary" data-translate="ai_visit">زيارة الأداة</a>
+            </div>
+            <div class="card">
+                <h3>Photomath</h3>
+                <p data-translate="ai_t6_d">تطبيق يستخدم كاميرا الهاتف لمسح وحل المسائل الرياضية، مع شرح تفصيلي لكل خطوة باستخدام تقنيات التعرف على الصور والذكاء الاصطناعي.</p>
+                <a href="https://photomath.com/" target="_blank" rel="noopener" class="btn primary" data-translate="ai_visit">زيارة الأداة</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="math-news" class="section alt">
+        <h2 data-translate="math_news_title">أخبار الرياضيات العالمية</h2>
+        <p data-translate="math_news_intro">ابق محدّثًا مع أحدث الاكتشافات والبحوث في عالم الرياضيات من أفضل المصادر العالمية</p>
+        
+        <div class="news-sources-grid">
+            <div class="news-source-card">
+                <div class="source-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIgZmlsbD0iIzAwNTlhYyIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCI+4oiRPC90ZXh0Pjwvc3ZnPg==" alt="Nature Mathematics" />
+                </div>
+                <div class="source-info">
+                    <h3 data-translate="nature_math_title">Nature Mathematics</h3>
+                    <p data-translate="nature_math_desc">مجلة Nature الشهيرة - قسم الرياضيات، تقدم أحدث البحوث والاكتشافات الرياضية المؤثرة عالمياً</p>
+                    <div class="source-features">
+                        <span class="feature-tag" data-translate="feature_research">بحوث متقدمة</span>
+                        <span class="feature-tag" data-translate="feature_peer_reviewed">مُحكّمة</span>
+                        <span class="feature-tag" data-translate="feature_english">إنجليزي</span>
+                    </div>
+                </div>
+                <a href="https://www.nature.com/subjects/mathematics" target="_blank" rel="noopener" class="btn primary source-btn" data-translate="visit_source">زيارة المصدر</a>
+            </div>
+
+            <div class="news-source-card">
+                <div class="source-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmNjk5NCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtZmFtaWx5PSJBcmlhbCI+QU1TPC90ZXh0Pjwvc3ZnPg==" alt="American Mathematical Society" />
+                </div>
+                <div class="source-info">
+                    <h3 data-translate="ams_title">American Mathematical Society</h3>
+                    <p data-translate="ams_desc">الجمعية الرياضية الأمريكية - أخبار ومقالات من أكبر منظمة رياضية في العالم</p>
+                    <div class="source-features">
+                        <span class="feature-tag" data-translate="feature_professional">مهني</span>
+                        <span class="feature-tag" data-translate="feature_news">أخبار</span>
+                    </div>
+                </div>
+                <a href="https://www.ams.org/news" target="_blank" rel="noopener" class="btn primary source-btn" data-translate="visit_source">زيارة المصدر</a>
+            </div>
+
+            <div class="news-source-card">
+                <div class="source-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cG9seWdvbiBwb2ludHM9IjUwLDEwIDkwLDkwIDEwLDkwIiBmaWxsPSIjNDc5MGZmIi8+PHRleHQgeD0iNTAiIHk9IjY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIxNCIgZm9udC1mYW1pbHk9IkFyaWFsIj5NYXRoPC90ZXh0Pjwvc3ZnPg==" alt="Mathematical Association of America" />
+                </div>
+                <div class="source-info">
+                    <h3 data-translate="maa_title">Mathematical Association of America</h3>
+                    <p data-translate="maa_desc">رابطة الرياضيات الأمريكية - مقالات تعليمية وأخبار للمعلمين والطلاب</p>
+                    <div class="source-features">
+                        <span class="feature-tag" data-translate="feature_education">تعليمي</span>
+                        <span class="feature-tag" data-translate="feature_teachers">للمعلمين</span>
+                    </div>
+                </div>
+                <a href="https://www.maa.org/news" target="_blank" rel="noopener" class="btn primary source-btn" data-translate="visit_source">زيارة المصدر</a>
+            </div>
+
+            <div class="news-source-card">
+                <div class="source-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIgZmlsbD0iIzFhNzNlOCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCI+U2NpPC90ZXh0Pjwvc3ZnPg==" alt="Science News Mathematics" />
+                </div>
+                <div class="source-info">
+                    <h3 data-translate="science_news_title">Science News - Mathematics</h3>
+                    <p data-translate="science_news_desc">أخبار العلوم - قسم الرياضيات، تغطية شاملة للاكتشافات الرياضية الجديدة</p>
+                    <div class="source-features">
+                        <span class="feature-tag" data-translate="feature_accessible">سهل القراءة</span>
+                        <span class="feature-tag" data-translate="feature_discoveries">اكتشافات</span>
+                    </div>
+                </div>
+                <a href="https://www.sciencenews.org/topic/mathematics" target="_blank" rel="noopener" class="btn primary source-btn" data-translate="visit_source">زيارة المصدر</a>
+            </div>
+
+            <div class="news-source-card">
+                <div class="source-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzIzMWYyMCIvPjx0ZXh0IHg9IjUwIiB5PSI0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtZmFtaWx5PSJBcmlhbCI+Qm9vbGU8L3RleHQ+PHRleHQgeD0iNTAiIHk9IjY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIj5NYXRoPC90ZXh0Pjwvc3ZnPg==" alt="Boole Math News" />
+                </div>
+                <div class="source-info">
+                    <h3 data-translate="quanta_title">Quanta Magazine - Mathematics</h3>
+                    <p data-translate="quanta_desc">مجلة Quanta - قسم الرياضيات، مقالات عميقة وسهلة الفهم عن الرياضيات المعاصرة</p>
+                    <div class="source-features">
+                        <span class="feature-tag" data-translate="feature_indepth">معمّق</span>
+                        <span class="feature-tag" data-translate="feature_visual">مرئي</span>
+                    </div>
+                </div>
+                <a href="https://www.quantamagazine.org/mathematics/" target="_blank" rel="noopener" class="btn primary source-btn" data-translate="visit_source">زيارة المصدر</a>
+            </div>
+
+            <div class="news-source-card">
+                <div class="source-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIgZmlsbD0iIzAwN2NiYSIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+TWF0aDwvdGV4dD48L3N2Zz4=" alt="Math News" />
+                </div>
+                <div class="source-info">
+                    <h3 data-translate="arxiv_title">arXiv Mathematics</h3>
+                    <p data-translate="arxiv_desc">أرشيف البحوث الرياضية الأكبر في العالم، أحدث الأوراق البحثية من الباحثين</p>
+                    <div class="source-features">
+                        <span class="feature-tag" data-translate="feature_preprints">أوراق بحثية</span>
+                        <span class="feature-tag" data-translate="feature_free">مجاني</span>
+                    </div>
+                </div>
+                <a href="https://arxiv.org/list/math/recent" target="_blank" rel="noopener" class="btn primary source-btn" data-translate="visit_source">زيارة المصدر</a>
+            </div>
+        </div>
+
+        <div class="news-aggregator">
+            <h3 data-translate="news_aggregator_title">مجمع الأخبار السريع</h3>
+            <p data-translate="news_aggregator_desc">أحدث العناوين من مختلف المصادر الرياضية</p>
+            <div class="quick-news-feed" id="mathNewsFeed">
+                <div class="news-loading">
+                    <div class="loading-spinner"></div>
+                    <p data-translate="loading_news">جاري تحميل الأخبار...</p>
+                </div>
+            </div>
+            <button class="btn secondary refresh-news" id="refreshNews" data-translate="refresh_news">تحديث الأخبار</button>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 data-translate="contact_title">مواقع التواصل الاجتماعي</h2>
+        <p data-translate="contact_p">انضم إلينا واستكشف أبعادًا جديدة معنا عبر منصاتنا الرقمية.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/posts/mathgroup-of-squ_%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D9%83%D9%84%D9%8A%D8%A9%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85-%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%82%D8%A7%D8%A8%D9%88%D8%B3-activity-7368909077805993988-_4hm/?originalSubdomain=ae" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/mathgroup_squ/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://x.com/Mathgroup_Squ" target="_blank" rel="noopener" aria-label="X" class="social-icon twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p class="copy" data-translate="footer_copy">© 2025 المهندس مؤيد العلوي</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
